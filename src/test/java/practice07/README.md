@@ -12,7 +12,7 @@ introduce方法返回一个字符串形如：
 
 再写一个Teacher类继承Person类，除了name，age属性，还有klass属性。也有一个introduce方法，
 introduce方法返回一个字符串形如：
-
+    
 >My name is Tom. I am 21 years old. I am a Teacher. I teach Class 2.
 
 如果klass为空，就会返回：
