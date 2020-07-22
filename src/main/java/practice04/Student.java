@@ -17,6 +17,6 @@ public class Student extends Person{
     }
 
     public String introduce(){//My name is Tom. I am 21 years old. I am a Student. I am at Class 2.
-        return  super.introduce() + " I am a Student. I am at Class "+ this.klass +".";
+        return  Person.basicIntroduce() + " I am a Student. I am at Class "+ this.klass +".";
     }
 }

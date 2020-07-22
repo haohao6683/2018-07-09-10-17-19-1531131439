@@ -1,8 +1,8 @@
 package practice04;
 
 public class Person {
-    protected  String name;
-    protected  int age;
+    protected  static String name;
+    protected  static int age;
 
     public Person(String name, int age) {
         this.name = name;
@@ -27,5 +27,9 @@ public class Person {
 
     public String introduce(){
         return "My name is " + this.name + ". I am " + this.age + " years old.";
+    }
+
+    public static String basicIntroduce(){
+        return "My name is " + name + ". I am " + age + " years old.";
     }
 }

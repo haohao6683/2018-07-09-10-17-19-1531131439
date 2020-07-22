@@ -10,7 +10,7 @@ introduce方法返回一个字符串形如：
 
 
 再写一个Worker类继承Person类，只有name，age属性。也有一个introduce方法，
-introduce方法返回一个字符串形如：
+introduce方法返回一个字符串形如：   
 
 >My name is Tom. I am 21 years old. I am a Worker. I have a job.
 
