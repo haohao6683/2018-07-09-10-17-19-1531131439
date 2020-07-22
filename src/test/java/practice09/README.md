@@ -15,7 +15,7 @@ Klass有一个assignLeader方法，接收一个Student实例。意为将一名�
 如果Klass的Leader是Tom，那么Tom调用introduce的方法就要返回：
 
 >My name is Tom. I am 21 years old. I am a Student. I am Leader of Class 2.
-
+    
 如果没有就继续返回旧的字符串。
 
 Klass还有一个appendMember方法，接受一个Student实例。意味将一名学生加入该班级。
