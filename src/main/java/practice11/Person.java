@@ -1,9 +1,9 @@
 package practice11;
 
 public class Person {
-    private  int id = 0;
-    private  String name = "";
-    private  int age = 0;
+    protected int id = 0;
+    protected String name = "";
+    protected int age = 0;
 
     @Override
     public boolean equals(Object obj) {
@@ -42,7 +42,6 @@ public class Person {
     }
 
     public String introduce(){
-        //return "My name is " + this.name + ". I am " + this.age + " years old.";
         return String.format("My name is %s. I am %s years old.",this.name,this.age);
     }
 }

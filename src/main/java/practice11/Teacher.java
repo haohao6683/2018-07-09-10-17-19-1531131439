@@ -35,14 +35,7 @@ public class Teacher extends Person implements Observer{
         return classes;
     }
 
-    public void setClasses(List<Klass> classes) {
-        this.classes = classes;
-    }
-
-    public String introduce(){//My name is Tom. I am 21 years old. I am a Teacher. I teach Class 2.
-//        String classString = "";
-//        classString += (this.klass == null) ? "No Class." : "Class " + this.klass.number+".";
-//        return  super.introduce() + " I am a Teacher. I teach "+ classString;
+    public String introduce(){
         List<String> classList = new ArrayList<>();
         classes.forEach(klass -> {
             classList.add(String.valueOf(klass.getNumber()));
@@ -51,10 +44,7 @@ public class Teacher extends Person implements Observer{
                 (this.classes.isEmpty()) ? "No Class" : "Class " + String.join(", ",classList));
     }
 
-    public  String introduceWith(Student student){//>My name is Tom. I am 21 years old. I am a Teacher. I teach Jerry.
-//        String teachingStr = "";
-//        teachingStr += (student.klass.number == this.klass.number) ? "teach " + student.name + "." : "don't teach " + student.name + ".";
-//        return  super.introduce() + " I am a Teacher. I "+ teachingStr;
+    public  String introduceWith(Student student){
         return String.format(super.introduce() + " I am a Teacher. I%s teach %s.",
                 (classes.contains(student.getKlass())) ? "" : " don't", student.getName());
     }

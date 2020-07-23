@@ -3,7 +3,6 @@ package practice11;
 public class Student extends Person{
     private  Klass klass;
 
-
     public Klass getKlass() {
         return klass;
     }
@@ -17,9 +16,7 @@ public class Student extends Person{
         this.klass = klass;
     }
 
-    public String introduce(){//>My name is Tom. I am 21 years old. I am a Student. I am Leader of Class 2.
-//        String introduce =  super.introduce() + " I am a Student. I am ";//"at Class "+ this.klass.number +".";
-//        introduce += (name == klass.leader.name) ? "Leader of Class " + klass.number + "." : "at Class "+ klass.number +".";
+    public String introduce(){
         return String.format(
                 super.introduce() +" I am a Student. I am %s Class " + klass.getNumber() +".",
                 (klass.getLeader() != null && getName() == klass.getLeader().getName()) ? "Leader of" : "at");

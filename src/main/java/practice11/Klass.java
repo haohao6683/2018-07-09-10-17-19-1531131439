@@ -62,6 +62,7 @@ public class Klass implements Observerable{
 
     public void appendMember(Student student){
         studentIdList.add(student.getId());
+        student.setKlass(this);
         observerList.forEach(observer -> {
             observer.appendUpdate(student);
         });
